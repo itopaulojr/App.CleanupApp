@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.CleanupApp", "App.CleanupApp\App.CleanupApp.csproj", "{C03B9659-8CB9-47FC-A771-B95A7185B961}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.CleanupApp.Test", "App.CleanupApp.Test\App.CleanupApp.Test.csproj", "{BDC4D87D-A796-4335-B5A4-E05DA3CFF080}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{C03B9659-8CB9-47FC-A771-B95A7185B961}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C03B9659-8CB9-47FC-A771-B95A7185B961}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C03B9659-8CB9-47FC-A771-B95A7185B961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC4D87D-A796-4335-B5A4-E05DA3CFF080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC4D87D-A796-4335-B5A4-E05DA3CFF080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC4D87D-A796-4335-B5A4-E05DA3CFF080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC4D87D-A796-4335-B5A4-E05DA3CFF080}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
