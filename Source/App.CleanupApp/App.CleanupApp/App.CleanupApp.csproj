@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\Interfaces\ICompress.cs" />
+    <Compile Include="Business\Interfaces\IDriverChecker.cs" />
+    <Compile Include="Business\Interfaces\IDriverServiceFactory.cs" />
+    <Compile Include="Business\Interfaces\IEmailSender.cs" />
+    <Compile Include="Business\Interfaces\IDriverService.cs" />
+    <Compile Include="Business\Interfaces\ISpaceMonitorService.cs" />
     <Compile Include="Configuration\DriverConfigurationElement.cs" />
     <Compile Include="Configuration\DriverMonitorHelper.cs" />
     <Compile Include="Configuration\FolderConfigurationElement.cs" />
@@ -72,9 +78,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Business\Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

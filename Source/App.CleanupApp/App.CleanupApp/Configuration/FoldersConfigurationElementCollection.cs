@@ -8,18 +8,6 @@ namespace App.CleanupApp.Configuration
 {
     public class FoldersConfigurationElementCollection : GenericConfigurationElementCollection<FolderConfigurationElement>
     {
-        [ConfigurationProperty("LimitSpaceToCleanupInPercentual", IsRequired = true)]
-        public decimal LimitSpaceToSendNotificationInPercentual
-        {
-            get { return Convert.ToDecimal(this["LimitSpaceToCleanupInPercentual"]); }
-            set { this["LimitSpaceToCleanupInPercentual"] = value; }
-        }
-
-        [ConfigurationProperty("BackupTargetFolder", IsRequired = true)]
-        public string BackupTargetFolder
-        {
-            get { return (string)this["BackupTargetFolder"]; }
-            set { this["BackupTargetFolder"] = value; }
-        }
+      
     }
 }

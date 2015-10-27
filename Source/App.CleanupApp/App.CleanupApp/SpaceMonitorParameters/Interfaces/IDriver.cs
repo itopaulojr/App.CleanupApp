@@ -10,5 +10,8 @@ namespace App.CleanupApp.SpaceMonitorParameters.Interfaces
         string Letter { get; }
         decimal LimitSpaceToSendNotificationInPercentual { get; }
         IFolders Folders { get; }
+        int KeepLastRecentCompressedFile { get; }
+        decimal LimitSpaceToCleanupInPercentual { get; }
+        string BackupTargetFolder { get; }
     }
 }

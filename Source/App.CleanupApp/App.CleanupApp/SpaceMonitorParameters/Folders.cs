@@ -17,14 +17,12 @@ namespace App.CleanupApp.SpaceMonitorParameters
             set { folders.Insert(index, value); }
         }
 
-        public decimal LimitSpaceToCleanupInPercentual { get; set; }
-
         public IEnumerator<IFolder> GetEnumerator()
         {
             return folders.GetEnumerator();
         }
 
-        public string BackupTargetFolder { get; set; }
+       
 
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
         {

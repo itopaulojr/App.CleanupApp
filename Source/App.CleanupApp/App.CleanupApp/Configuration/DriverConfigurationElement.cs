@@ -31,5 +31,18 @@ namespace App.CleanupApp.Configuration
             get { return (FoldersConfigurationElementCollection)this["Folders"]; }
         }
 
+        [ConfigurationProperty("BackupTargetFolder", IsRequired = true)]
+        public string BackupTargetFolder
+        {
+            get { return (string)this["BackupTargetFolder"]; }
+            set { this["BackupTargetFolder"] = value; }
+        }
+
+        [ConfigurationProperty("KeepLastRecentCompressedFile", IsRequired = true)]
+        public int KeepLastRecentCompressedFile
+        {
+            get { return (int)this["KeepLastRecentCompressedFile"]; }
+            set { this["KeepLastRecentCompressedFile"] = value; }
+        }
     }
 }

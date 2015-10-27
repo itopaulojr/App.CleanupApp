@@ -26,10 +26,10 @@ namespace App.CleanupApp.Configuration
                     Driver driver = new Driver();
                     driver.Letter = driverConfigSection.Letter;
                     driver.LimitSpaceToSendNotificationInPercentual = driverConfigSection.LimitSpaceToSendNotificationInPercentual;
-
+                    driver.LimitSpaceToCleanupInPercentual = driverConfigSection.LimitSpaceToSendNotificationInPercentual;
+                    driver.BackupTargetFolder = driverConfigSection.BackupTargetFolder;
+                    driver.KeepLastRecentCompressedFile = driverConfigSection.KeepLastRecentCompressedFile;
                     Folders auxFolders = new Folders();
-                    auxFolders.LimitSpaceToCleanupInPercentual = driverConfigSection.Folders.LimitSpaceToSendNotificationInPercentual;
-                    auxFolders.BackupTargetFolder = driverConfigSection.Folders.BackupTargetFolder;
                     foreach (var folderConfigSection in driverConfigSection.Folders)
                     {
                         Folder folder = new Folder();
