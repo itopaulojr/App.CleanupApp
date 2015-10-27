@@ -6,7 +6,7 @@ using System.Configuration;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
+
 
 namespace App.CleanupApp.Configuration
 {
@@ -20,7 +20,7 @@ namespace App.CleanupApp.Configuration
                 var spaceMonitorConfigurationSection = ConfigurationManager.GetSection("SpaceMonitor") as SpaceMonitorConfigurationSection;
 
                 SpaceMonitor spaceMonitor = new SpaceMonitor();
-                List<Driver> auxDrivers = new List<Driver>();
+                List<IDriver> auxDrivers = new List<IDriver>();
                 foreach (var driverConfigSection in spaceMonitorConfigurationSection.Drivers)
                 {
                     Driver driver = new Driver();
