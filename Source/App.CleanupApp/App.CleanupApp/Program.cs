@@ -5,7 +5,6 @@ using System.Configuration;
 using System.Linq;
 using System.ServiceProcess;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace App.CleanupApp
 {
@@ -16,9 +15,6 @@ namespace App.CleanupApp
         /// </summary>
         static void Main()
         {
-
-            var aaa = DriverMonitorHelper.DriverMonitor;
-
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[] 
             { 
