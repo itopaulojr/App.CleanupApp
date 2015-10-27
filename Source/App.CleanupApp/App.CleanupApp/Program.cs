@@ -1,4 +1,5 @@
 ﻿using App.CleanupApp.Configuration;
+using App.CleanupApp.SpaceMonitorParameters.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -15,6 +16,9 @@ namespace App.CleanupApp
         /// </summary>
         static void Main()
         {
+            ISpaceMonitor parameter = DriverMonitorHelper.DriverMonitor;
+            
+
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[] 
             { 

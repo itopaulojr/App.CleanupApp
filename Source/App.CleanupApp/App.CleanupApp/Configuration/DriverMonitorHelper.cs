@@ -29,6 +29,7 @@ namespace App.CleanupApp.Configuration
 
                     Folders auxFolders = new Folders();
                     auxFolders.LimitSpaceToCleanupInPercentual = driverConfigSection.Folders.LimitSpaceToSendNotificationInPercentual;
+                    auxFolders.BackupTargetFolder = driverConfigSection.Folders.BackupTargetFolder;
                     foreach (var folderConfigSection in driverConfigSection.Folders)
                     {
                         Folder folder = new Folder();

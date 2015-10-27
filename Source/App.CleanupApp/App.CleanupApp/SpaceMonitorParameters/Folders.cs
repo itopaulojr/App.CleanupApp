@@ -24,6 +24,8 @@ namespace App.CleanupApp.SpaceMonitorParameters
             return folders.GetEnumerator();
         }
 
+        public string BackupTargetFolder { get; set; }
+
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
         {
             return this.GetEnumerator();

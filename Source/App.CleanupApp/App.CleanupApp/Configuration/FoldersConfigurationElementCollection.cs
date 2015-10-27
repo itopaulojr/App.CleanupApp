@@ -14,5 +14,12 @@ namespace App.CleanupApp.Configuration
             get { return Convert.ToDecimal(this["LimitSpaceToCleanupInPercentual"]); }
             set { this["LimitSpaceToCleanupInPercentual"] = value; }
         }
+
+        [ConfigurationProperty("BackupTargetFolder", IsRequired = true)]
+        public string BackupTargetFolder
+        {
+            get { return (string)this["BackupTargetFolder"]; }
+            set { this["BackupTargetFolder"] = value; }
+        }
     }
 }
